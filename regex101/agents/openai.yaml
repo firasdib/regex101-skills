@@ -1,0 +1,11 @@
+interface:
+  display_name: "regex101"
+  short_description: "Manage regex101 workspaces and explain any regex"
+  default_prompt: "Use $regex101 to create and save a regular expression with sample tests."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "regex101"
+      description: "regex101 workspace and explanation tools"
+      transport: "streamable_http"
+      url: "https://regex101.com/mcp"
